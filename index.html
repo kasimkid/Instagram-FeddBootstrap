@@ -3,74 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9bcc6c0b4e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/9bcc6c0b4e.js" crossorigin="anonymous"></script>
+    
     <title>Proyecto Bootstrap</title>
-</head>
-<body>
+   
+  </head>
+  <body>
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="bi bi-instagram me-3"></i><strong>Instagram</strong>
-            </a>
-            <div class="dropdown">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-              </button>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-instagram me-3"></i><strong>Instagram</strong>
+        </a>
+        <div class="dropdown">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Create new post
+          </button>
 
-<!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Create new post
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Caption</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Comments"
+                    >
+                    </textarea>
+                  </div>
+                  <div class="mt-2">
+                    <button class="btn btn-outline-secondary">
+                      <span><i class="bi bi-camera"></i></span></button
+                    ><button class="btn btn-outline-secondary ms-2">
+                      <span><i class="bi bi-geo-alt"></i></span>
+                    </button>
                   </div>
                 </div>
-              </div>
-
-                <!--Drompdown-->
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi bi-gear"></i>
-                </button>
-                <ul class="dropdown-menu" id="#dropdownMeuButton1" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">accesibility</a></li>
-                  <li><a class="dropdown-item" href="#">Privace and data</a></li>
-                  <li><hr></li>
-                  <li><a class="dropdown-item" href="#">Log Out</a></li>
-                </ul>
-              </div>
-        </div>
-    </nav>
-
-        <<!--Imagenes-->
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-12">
-                <img src="https://fastly.picsum.photos/id/666/400/300.jpg?hmac=FilXnHZ4b_EivM1CHjHAMFQFSRQesBOKP1VK9dQwq8A" alt="">
-                <img src="https://fastly.picsum.photos/id/444/400/300.jpg?hmac=1AxCK8p9qkLAKam4Aso89oEHyQVBSV_MBf-SR1yS6II"  alt="">
-                <img src="https://fastly.picsum.photos/id/887/400/300.jpg?hmac=yIjUmTwKHmGBfV-bm2yuw_H39YPu8hfGgXZ91naqAOE"  alt="">
-                <img src="https://fastly.picsum.photos/id/879/400/300.jpg?hmac=IwJQvHp6uPsppNCyRSKMzWHHPp3xf6NA3FetziFpEOU"  alt="">
-                <img src="https://fastly.picsum.photos/id/180/400/300.jpg?hmac=M9jTg4LauWtLpFDOoZYf1Z0MHwdBU7FvJ2ht9Vp3mHI"  alt="">
-                <img src="https://fastly.picsum.photos/id/964/400/300.jpg?hmac=yMiaah2OBd1WIl_zj5vxIqzazC4qDpCNwKLlzSVmvLM"  alt="">
-                <img src="https://fastly.picsum.photos/id/699/400/300.jpg?hmac=6XS79OWHwhxMFWCFL_AzJBL0pyMZE8STmyEoqn_C-10"  alt="">
-                <img src="https://fastly.picsum.photos/id/282/400/300.jpg?hmac=pg3cXY_azLs8GBebj2Nn2Og29sKYeyIVTuGksd4IOZI"  alt="">
-                <img src="https://fastly.picsum.photos/id/401/400/300.jpg?hmac=u5e8OXVKnI00CgYrO1TTxTmvzG84CVmj3FFVSNXPR60" alt="">
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Save</button>
+                </div>
               </div>
             </div>
           </div>
 
-              
-      
+          <!--Drompdown-->
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-gear"></i>
+          </button>
+          <ul
+            class="dropdown-menu"
+            id="#dropdownMeuButton1"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privace and data</a></li>
+            <li><hr /></li>
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+      <ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><span><i class="bi bi-grid-3x3"></i></span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span><i class="bi bi-square-fill"></i></i></span></button>
+          </li>
+        </ul>
+      <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                  <img class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/666/400/300.jpg?hmac=FilXnHZ4b_EivM1CHjHAMFQFSRQesBOKP1VK9dQwq8A"
+                    alt=""
+                  />
+                  <img class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/444/400/300.jpg?hmac=1AxCK8p9qkLAKam4Aso89oEHyQVBSV_MBf-SR1yS6II"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/887/400/300.jpg?hmac=yIjUmTwKHmGBfV-bm2yuw_H39YPu8hfGgXZ91naqAOE"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/879/400/300.jpg?hmac=IwJQvHp6uPsppNCyRSKMzWHHPp3xf6NA3FetziFpEOU"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/180/400/300.jpg?hmac=M9jTg4LauWtLpFDOoZYf1Z0MHwdBU7FvJ2ht9Vp3mHI"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/964/400/300.jpg?hmac=yMiaah2OBd1WIl_zj5vxIqzazC4qDpCNwKLlzSVmvLM"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/699/400/300.jpg?hmac=6XS79OWHwhxMFWCFL_AzJBL0pyMZE8STmyEoqn_C-10"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/282/400/300.jpg?hmac=pg3cXY_azLs8GBebj2Nn2Og29sKYeyIVTuGksd4IOZI"
+                    alt=""
+                  />
+                  <img  class="img mb-2 me-2"
+                    src="https://fastly.picsum.photos/id/401/400/300.jpg?hmac=u5e8OXVKnI00CgYrO1TTxTmvzG84CVmj3FFVSNXPR60"
+                    alt=""
+                  />
+                </div>
+
+            </div>
+            </div>
+          </div>
+        
+        <!--Profile-->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="container">  
+          <div class="row ">
+                <div class="col d-flex flex-column align-items-center">
+                  <div class="picture-1 border bg-light mb-3">
+                    <p><b>Foto 1</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/666/400/300.jpg?hmac=FilXnHZ4b_EivM1CHjHAMFQFSRQesBOKP1VK9dQwq8A"
+                    alt=""
+                  />
+                  <p><b>204 likes</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="picture-2 border bg-light fw-normal mb-3">
+                    <p><b>Foto 2</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/444/400/300.jpg?hmac=1AxCK8p9qkLAKam4Aso89oEHyQVBSV_MBf-SR1yS6II"
+                    alt=""
+                  />
+                  <p><b>1298</b></p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="picture-3 border bg-light fw-normal mb-3">
+                  <p><b>Foto 3</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/887/400/300.jpg?hmac=yIjUmTwKHmGBfV-bm2yuw_H39YPu8hfGgXZ91naqAOE"
+                    alt=""
+                  />
+                  <p><b>45890</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div class="picture-4 border bg-light fw-normal mb-3">
+                  <p><b>Foto 4</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/879/400/300.jpg?hmac=IwJQvHp6uPsppNCyRSKMzWHHPp3xf6NA3FetziFpEOU"
+                    alt=""
+                  />
+                  <p><b>45678</b></p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                </div>
+                <div class="picure-5 border bg-light fw-normal mb-3">
+                  <p><b>Foto 5</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/180/400/300.jpg?hmac=M9jTg4LauWtLpFDOoZYf1Z0MHwdBU7FvJ2ht9Vp3mHI"
+                    alt=""
+                  />
+                  <p><b>34578</b></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="picture-6  border bg-light fw-normal mb-3">
+                  <p><b>Foto 6</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/964/400/300.jpg?hmac=yMiaah2OBd1WIl_zj5vxIqzazC4qDpCNwKLlzSVmvLM"
+                    alt=""
+                  />
+                  <p><b>43256</b></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="picture-7 border bg-light fw-normal mb-3">
+                  <p><b>Foto 7</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/699/400/300.jpg?hmac=6XS79OWHwhxMFWCFL_AzJBL0pyMZE8STmyEoqn_C-10"
+                    alt=""
+                  />
+                  <P><b>76523</b></P>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+                </div>
+                <div class="picture-8 border bg-light fw-normal mb-3">
+                  <p><b>Foto 8</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/282/400/300.jpg?hmac=pg3cXY_azLs8GBebj2Nn2Og29sKYeyIVTuGksd4IOZI"
+                    alt=""
+                  />
+                  <p><b>76321</b></p>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="picture-9 border bg-light fw-normal mb-3">
+                  <p><b>Foto 9</b></p>
+                  <img
+                    src="https://fastly.picsum.photos/id/401/400/300.jpg?hmac=u5e8OXVKnI00CgYrO1TTxTmvzG84CVmj3FFVSNXPR60"
+                    alt=""
+                  />
+                  <p><b>89321</b></p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                </div>
+              </div>  
+              </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
